@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Not Gonna Lie Studios</title>
+  <style>
+    /* ====== GLOBAL ====== */
+    * { margin:0; padding:0; box-sizing:border-box; font-family:Arial, Helvetica, sans-serif; }
+    body { background:#0b0b0b; color:#fff; }
+
+    /* HERO */
+    .hero {
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+    }
+    .hero h1 { font-size:3.2rem; margin-bottom:10px; }
+    .hero p { color:#aaa; margin-bottom:25px; font-size:1.1rem; }
+    .btn {
+      padding:14px 30px;
+      background:#fff;
+      color:#000;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+    .btn:hover { background:#ccc; }
+
+    /* SECTIONS */
+    section { padding:80px 10%; }
+    h2 { text-align:center; margin-bottom:40px; font-size:2.2rem; }
+
+    /* CARDS */
+    .cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:30px; }
+    .card {
+      background:#141414;
+      padding:20px;
+      border-radius:12px;
+      text-align:center;
+      transition:0.3s;
+    }
+    .card:hover { transform:translateY(-5px); background:#1f1f1f; }
+    .card img { width:100%; border-radius:10px; margin-bottom:15px; }
+    .card h3 { margin-bottom:8px; }
+    .card p { color:#bbb; font-size:0.95rem; }
+    .card a {
+      display:inline-block;
+      margin-top:12px;
+      color:#00caff;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    .card.small { padding:30px; }
+
+    /* ABOUT */
+    .about-text {
+      max-width:800px;
+      margin:auto;
+      text-align:center;
+      color:#ccc;
+      font-size:1.05rem;
+      line-height:1.6;
+    }
+
+    /* CONTACT */
+    .contact-links { text-align:center; margin-top:20px; }
+    .contact-links a { margin:0 15px; color:#00caff; text-decoration:none; font-weight:bold; }
+
+    /* FOOTER */
+    footer { text-align:center; padding:25px; background:#080808; color:#777; font-size:0.9rem; }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <h1>Not Gonna Lie Studios</h1>
+    <p>We create immersive Roblox experiences.</p>
+    <a href="#games" class="btn">View Our Games</a>
+  </header>
+
+  <!-- GAMES -->
+  <section id="games">
+    <h2>Our Games</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="[ALPHA] Escape Tsunami For Cars">
+        <h3>[ALPHA] Escape Tsunami For Cars</h3>
+        <p>Visits: <strong>13</strong><br>Owned by <strong>FEX_STUDIOS</strong></p>
+        <a href="https://www.roblox.com/fr/games/115309462005576/Escape-Tsunami-For-Cars" target="_blank">Play on Roblox</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="[BACK] Aura RNG">
+        <h3>[BACK] Aura RNG</h3>
+        <p>Visits: <strong>346</strong><br>Developed by <strong>Not Gonna Lie Studios</strong></p>
+        <a href="https://www.roblox.com/fr/games/121953761463518/Aura-RNG" target="_blank">Play on Roblox</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p class="about-text">
+      <strong>Not Gonna Lie Studios</strong> is a Roblox development studio focused on
+      creating fun, polished, and engaging experiences.<br><br>
+      We are the parent studio of <strong>FEX_STUDIOS</strong>, which owns and operates
+      <strong>[ALPHA] Escape Tsunami For Cars</strong>.
+    </p>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <h2>Our Team</h2>
+    <div class="cards">
+      <div class="card small">
+        <h3>FEX_STUDIOS</h3>
+        <p>Owner / Lead Developer</p>
+      </div>
+      <div class="card small">
+        <h3>Team Member</h3>
+        <p>Developer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Reach out to us through our community platforms.</p>
+    <div class="contact-links">
+      <a href="#">Discord</a>
+      <a href="#">Roblox Group</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Not Gonna Lie Studios. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
